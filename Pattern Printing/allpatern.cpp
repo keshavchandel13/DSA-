@@ -86,25 +86,25 @@ int main(){
         pattern8();
         break;
 
-    // case 9:
-    //     pattern9();
-    //     break;
+    case 9:
+        pattern9();
+        break;
 
-    // case 10:
-    //     pattern10();
-    //     break;
+    case 10:
+        pattern10();
+        break;
 
-    // case 11:
-    //     pattern11();
-    //     break;
+    case 11:
+        pattern11();
+        break;
 
-    // case 12:
-    //     pattern12();
-    //     break;
+    case 12:
+        pattern12();
+        break;
 
-    // case 13:
-    //     pattern13();
-    //     break;
+    case 13:
+        pattern13();
+        break;
 
     // case 14:
     //     pattern14();
@@ -230,4 +230,85 @@ void pattern8(){
         cout<<endl;
     }
 
+}
+void pattern9(){
+    // Alphabetic Square Pattern
+    cout<<endl;
+    int side;
+    cout<<"enter the side of the square"<<endl;
+    cin>>side;
+    char alpha = 'A';
+    for(int i=1;i<=side;i++){
+        for(int j=1;j<=side;j++){
+            cout<<alpha<<" ";
+        }
+        alpha++;
+        cout<<"\n";
+    }
+}
+void pattern10(){
+    // Alphabetic Triangle Pattern
+    cout<<endl;
+    int height;
+    cout<<"enter the height of the triangle"<<endl;
+    cin>>height;
+    cout<<endl;
+    char alpha = 'A';
+    for(int i=1;i<=height;i++){
+        for(int j=1;j<=i;j++){
+            cout<<alpha<<" ";
+        }
+        alpha++;
+        cout<<endl;
+    }
+}
+void pattern11(){
+     // Inverted Alphabetic Triangle Pattern
+     cout<<endl;
+    int height;
+    cout<<"enter the height of the triangle"<<endl;
+    cin>>height;
+    char alpha = 'A',value;
+    for(int i=1;i<=height;i++){
+        value = alpha+ height -i;
+        for(int j=1;j<=i;j++){
+            cout<<value<<" ";
+        }
+        cout<<endl;
+    }
+}
+void pattern12(){
+    // Inverted Right Angle Character Triangle Pattern
+    cout<<endl;
+    int height;
+    char s;
+    cout<<"Enter the height of the triangle"<<endl;
+    cin>>height;
+    cout<<"Enter the symbol you want to print pattern"<<endl;
+    cin>>s;
+    for(int i=1;i<=height;i++){
+        for(int j=1;j<=(height-i);j++){
+            cout<<"  ";
+        }
+        for(int k=1;k<=i;k++){
+            cout<<s<<" ";
+        }
+        cout<<endl;
+    }
+}
+void pattern13(){
+    // Reverse Right Angle Character Triangle Pattern
+    cout<<endl;
+    int height;
+    char s;
+    cout<<"Enter the height of the triangle"<<endl;
+    cin>>height;
+    cout<<"Enter the symbol you want to print pattern"<<endl;
+    cin>>s;
+    for(int i=1;i<=height;i++){
+        for(int k=height;k>=i;k--){
+            cout<<s<<" ";
+        }
+        cout<<endl;
+    }
 }
