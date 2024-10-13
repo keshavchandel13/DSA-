@@ -106,13 +106,13 @@ int main(){
         pattern13();
         break;
 
-    // case 14:
-    //     pattern14();
-    //     break;
+    case 14:
+        pattern14();
+        break;
 
-    // case 15:
-    //     pattern15();
-    //     break;
+    case 15:
+        pattern15();
+        break;
 
     default:
         cout << "Invalid Number, please select a number from above given list :)" << endl;
@@ -311,4 +311,48 @@ void pattern13(){
         }
         cout<<endl;
     }
+}
+void pattern14(){
+       // Number Pyramid Pattern
+       cout<<endl;
+       int h;
+       cout<<"Enter the height of the pyramid"<<endl;
+       cin>>h;
+       for(int i=1;i<=h;i++){
+        for(int j=1;j<=(h-i);j++){
+            cout<<"  ";
+        }
+        for(int k=1;k<=i;k++){
+            cout<<k<<" ";
+        }
+        for(int l=i-1;l>=1;l--){
+            cout<<l<<" ";
+        }
+        for(int m=1;m<=(h-i);m++){
+            cout<<"  ";
+        }
+        cout<<endl;
+       }
+}
+void pattern15(){
+     cout<<endl;
+       int h;
+       cout<<"Enter the height of the pyramid"<<endl;
+       cin>>h;
+       cout<<endl;
+       for(int i=1;i<=h;i++){
+        for(int j=1;j<=(h-i);j++){
+            cout<<j<<" ";
+        }
+        for(int k=1;k<=i;k++){
+            cout<<"* ";
+        }
+        for(int l=i-1;l>=1;l--){
+            cout<<"* ";
+        }
+        for(int m=1;m<=(h-i);m++){
+            cout<<m<<" ";
+        }
+        cout<<endl;
+       }
 }
