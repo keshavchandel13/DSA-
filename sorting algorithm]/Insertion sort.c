@@ -21,7 +21,7 @@ int  main()
      {
         key=x[i];
         j=i-1;
-        while(j>=0 && axj]>key)
+        while(j>=0 && x[j]>key)
         {
             x[j+1]=x[j];
             j=j-1;
